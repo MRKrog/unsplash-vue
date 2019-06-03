@@ -6,7 +6,7 @@ export const fetchData = async () => {
     const images = await fetchImages(data.results)
     return images
   } catch (error) {
-    console.log(error);
+    return error
   }
 }
 
