@@ -18,7 +18,7 @@ export const fetchPhotos = async (search) => {
     const images = await fetchImages(data.results)
     return images
   } catch (error) {
-    console.log(error);
+    return error
   }
 }
 

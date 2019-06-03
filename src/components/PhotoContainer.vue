@@ -1,7 +1,7 @@
 <template>
   <div class="PhotoContainer">
     <div class="photoDisplay">
-      <photoImage v-bind:key v-for="photo in photos" :photo.sync="photo"></photoImage>
+      <photoImage v-for="photo in photos" :photo.sync="photo" v-bind:key="photo"></photoImage>
     </div>
   </div>
 </template>
